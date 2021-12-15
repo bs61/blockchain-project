@@ -1,0 +1,628 @@
+/*
+Theme Name: Avada Plus
+Theme URI: http://themewagon.com/
+Author: ThemeWagon
+Author URI: http://themewagon.com/
+Description: Slick One page HTML 5 template powered by Bootstrap 3.
+Version: 1.14.11
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-3.0.txt
+Tags: blur, white, one page, parallax, responsive-layout, full-width-template
+Text Domain: flusk
+*/
+
+/**
+* Table of Contents:
+*
+* 01.0 - Global
+* 02.0 - Header
+* 03.0 - Drawer with menu
+* 04.0 - Parallax styles
+* 05.0 - Recent works
+* 06.0 - Services
+* 07.0 - Blog
+* 08.0 - Testimonials
+* 09.0 - Contact
+* 10.0 - Footer
+* 11.0 - Responsive styles
+* -----------------------------------------------------------------------------
+*/
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  01 - Global 
+/////////////////////////////////////////////////////////////////////*/
+
+* {outline: none !important;}
+
+::selection {
+  background-color: #475B6F;
+  color: #fff;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  overflow-y: scroll;
+}
+
+body {
+  color: #6a6a6a; 
+  background: #f1f0f0;
+}
+
+p {
+  margin: 0 0 20px 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+img {max-width: 100%;}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+a{  
+  color: #4da7ca;
+  -o-transition: all .4s;
+  -ms-transition: all .4s;
+  -moz-transition: all .4s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+a:hover {
+  color: #4290ae; 
+}
+
+
+h1, h2, h3, h4, h5, h6{   
+  margin: 0 0 15px 0; 
+  color: #3A4F52;
+  font-family: 'Raleway';
+}
+
+.btn{border-radius: 0;}
+.btn-o {
+    border: 1px solid #3A4F52;
+    color: #3A4F52;
+}
+.btn-o:hover {
+    background: #3A4F52;
+    color: white;
+}
+.btn.btn-o-white {
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    
+}
+.btn.btn-o-white:hover {
+    background: white !important;
+    color: #6a6a6a; 
+}
+
+.title-page {
+  display: inline-flex;
+  margin-bottom: -20px;
+}
+p.main-header {
+  font-size: 27px;
+  font-family: 'Raleway';
+  font-weight: 500;
+}
+p.main-header:after {
+  content: " ";   
+  font-size: 27px;
+  font-family: 'Raleway';
+  font-weight: 500;
+}
+p.sub-header {
+  font-size: 27px;
+  font-family: 'Raleway';
+  font-weight: 100;
+  margin-left: 10px;
+}
+p.sub-header:before {
+  content: " ||| ";
+  font-size: 27px;
+  font-family: 'Raleway';
+  font-weight: 300;
+}
+li{
+  list-style: none;
+}
+
+/*////////////////////////////////////////////////////////////////////////
+//  02 - Header
+///////////////////////////////////////////////////////////////////////*/
+ 
+    
+
+header.top-header {
+  position:fixed;
+  z-index: 999;
+  width: 100%;
+}
+.shows {
+ background: rgba(43, 62, 81, 0.77);
+ transition: all .6s;
+}
+.shows .navbar-default {
+  /* background-color: #f8f8f8; */
+  /* border-color: #e7e7e7; */
+  margin-bottom: 10px;
+  transition: all .6s;
+}
+.shows .navbar-nav {
+  float: right;
+  margin: 15px 0 0;
+  color: white;
+}
+.shows h1.logo {
+  margin-top: 0px;
+  color: white;
+}
+
+h1.logo {
+  margin-top: 11px;
+  color: white;
+  display: inline-flex;
+}
+#header{  
+  position: relative;     
+  text-align: center;
+  padding: 0 !important;
+}
+.navbar-nav {
+  float: right;
+  margin: 31px 0 0;
+  color: white;
+}
+#header .top {
+  position:fixed;
+  top:0;
+  width: 100%;
+  padding: 30px;
+  height: auto;
+  z-index: 500;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;  
+  transition: all .5s;    
+}
+#header .top.solid {
+    background: #475B6F;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#header .top h1{
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+#header .top.solid .toggleDrawer i {
+    padding-top: 8px;
+}
+
+
+#header .logo, #header .toggleDrawer{
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+.logo-head{
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}
+heade-logo .h4{
+  font-size:100%;
+  margin-top: 5%;
+  margin-left: 110%;
+  color: white;
+  
+  
+}
+div.form{
+  margin-top: 5%;
+}
+h4.public{
+  color: white;
+  margin: 10% 110%;
+}
+#header .center{
+  margin-top: 20%;
+}
+
+
+#header .slogan{
+  font-size: 4em;
+  margin-bottom: 15px;
+  line-height: 1em;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-weight: bold;
+}
+div.slogan{
+  margin-top: 5%;
+}
+#header .secondary-slogan{
+  font-size: 1.6em;
+  color: rgba(255,255,255,.5);
+  line-height: 1em;
+  font-family: 'Raleway', sans-serif;
+}
+
+#header > .bottom {
+    position: absolute;
+    bottom: 75px;
+    text-align: center;
+    width: 100%;
+}
+#header > .bottom a img {
+    width: 50px;
+}
+#header > .bottom a {
+    opacity: 0.7;
+}
+#header > .bottom a:hover {
+    opacity: 1;
+}
+.center
+
+
+/*////////////////////////////////////////////////////////////////////////
+//  03 - Drawer with menu
+///////////////////////////////////////////////////////////////////////*/
+
+#drawer-right {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-right: -300px;
+    background: #2B3E51;
+    width: 300px;
+    padding: 20px;
+    z-index: 999;
+}
+
+#drawer-right h1, #drawer-right h2{color: white;}
+
+#drawer-right .nav-pills>li>a {
+  font-size: 18px;
+  border-radius: 0;
+}
+
+#drawer-right .social{margin-top: 30px}
+#drawer-right .social ul {
+    list-style: none;
+    padding-left: 20px;
+}
+#drawer-right .social ul > li {
+    display: inline-block;
+}
+#drawer-right .social ul > li > a:hover{
+  color: white;
+}
+
+
+
+/*////////////////////////////////////////////////////////////////////////
+//  04 - Parallax styles
+///////////////////////////////////////////////////////////////////////*/
+
+.content-block{
+  background:transparent no-repeat center center fixed;
+  -webkit-background-size:100%;
+  -moz-background-size:100%;
+  -o-background-size:100%;
+  background-size:100%;
+  background-size:cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  overflow:hidden;
+  padding: 100px 20px;
+}
+.parallax{
+  padding: 80px 0;
+}
+
+.block-body {
+  margin-top: 60px;
+}
+
+#header {
+  background-image: url(../../Images/bg.jpg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
+}
+#services {
+  background:white;
+}
+#parallax {
+  /* background-image: url(../images/blue_mac2.jpg); */
+  color: white;
+  background: #db5252;
+}
+#contact {
+  background-image: url(../images/newsletter-bg.png);
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+}
+#parallax h1{
+  margin-bottom: 60px;
+  color: white;
+}
+
+
+
+
+/*////////////////////////////////////////////////////////////////////////
+//  05 - Recent works
+///////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+/*////////////////////////////////////////////////////////////////////////
+//  06 - Services
+///////////////////////////////////////////////////////////////////////*/
+
+/*////////////////////////////////////////////////////////////////////////
+//  About us
+///////////////////////////////////////////////////////////////////////*/
+.portfolio-sec ,.services-sec ,.blog-sec , .testimonial-sec{
+  margin-top: 60px;
+}
+.about-sec {
+  margin-top: 40px;
+}
+
+.about-us {
+  background: white;
+  padding: 92px 0 80px;
+}
+.btn{
+  border-radius: 50%;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) { 
+      .about-us {
+      background: white;
+      padding: 50px 0;
+      color: #ffffff;
+    }
+}
+
+.aboutus-item {
+  margin-bottom: 15px;
+  margin-top: 90px;
+}
+
+i.aboutus-icon {
+  /*border: 3px solid rgb(106, 106, 106);*/
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 56px;
+  width: 140px;
+  height: 140px;
+  line-height: 136px;
+  vertical-align: middle; 
+  text-align: center;
+  color: rgb(106, 106, 106);
+}
+
+h4.aboutus-title {
+  font-family: 'Raleway', sans-serif;
+  margin-top: 23px;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+p.aboutus-desc {
+  font-size: 16px;
+  line-height: 29px;
+  letter-spacing: 0.4px;
+  color: rgb(106, 106, 106);
+}
+
+
+
+/*////////////////////////////////////////////////////////////////////////
+//  Call to Action
+///////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////
+//  07 - Blog
+///////////////////////////////////////////////////////////////////////*/
+
+
+/*////////////////////////////////////////////////////////////////////////
+//  08 - Testimonials
+///////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////
+//  09 - Contact
+///////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////
+//  10 - Footer
+///////////////////////////////////////////////////////////////////////*/
+
+
+/*////////////////////////////////////////////////////////////////////////
+//  11 - Responsive styles
+///////////////////////////////////////////////////////////////////////*/
+
+
+@media (max-width: 767px){
+  .blog-post {
+    margin-bottom: 40px;
+  }
+
+  .recent-work {
+    background-position: center;
+  }
+
+  .recent-work:before {
+    opacity: 1;
+  }
+
+  .recent-work span {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  #drawer-right {
+    padding: 10px 20px;
+  }
+
+  #drawer-right .nav-pills>li>a {
+    font-size: 17px;
+  }
+
+  .nav-stacked>li+li {
+    margin-top: 0;
+  }
+
+  .nav>li>a {
+    padding: 8px 15px;
+  }
+
+  #drawer-right .social {
+    margin-top: 5px;
+  }
+
+  #header {
+    background-size: cover;
+  }
+  .service {
+  text-align: center;
+  }
+}
+button.navbar-toggle.collapsed {
+  margin-top: 40px;
+}
+
+/*form general*/
+.form {
+	margin: 10px auto;
+	padding: 10px 30px 35px;
+	display: block;
+	width: 375px;
+	background-color: #DEDCDC;
+	box-shadow: 0 0 25px 0 #000;
+}
+
+.form h3 {
+	color:	#FFFFFF;
+  font-size: 40px;
+	margin: 10px 0 20px 0;
+}
+
+.form h4 {
+	color:	#000000;
+  font-size: 30px;
+	margin: 10px 0 20px 0;
+	
+}
+
+.form h2 {
+	color:	#000000;
+  font-size: 40px;
+	margin: 10px 0 20px 0;
+}
+
+.form input, .form button, .form h2 {
+	font-family: 'HelveticaNeue-Light', Helvetica;
+  font-weight: 100;
+}
+
+input[type="text"],
+input[type="password"] {
+	display: block;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	font-size: 15px;
+  height: 30px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"], label {
+	display: inline-block;
+	float: left;
+}
+
+input:focus {
+	outline: none;
+	border: 1px solid #44C7A9;
+}
+
+.input-std {
+	width: 95.5%;
+	font-size: 18px;
+	display: inline-block;
+}
+
+.input-half {
+	width: 45.9%;
+	float: left;
+}
+
+.input-quarter {
+	width: 21%;
+	float: left;
+}
+
+.btn-submit {
+	width: 100%;
+	font-size: 30px;
+	padding: 11px 19px;
+	border-radius: 6px;
+	border: 2px solid #cccccc;
+	cursor: pointer;
+	 background-color: #4CAF50;
+}
+
+.btn-submit1 {
+	width: 100%;
+	font-size: 30px;
+	padding: 11px 19px;
+	border-radius: 6px;
+	border: 2px solid #cccccc;
+	cursor: pointer;
+	 background-color: #4CAF50;
+}
+
+.btn-submit:focus {
+	outline: none;
+}
+
+#sign-up {
+	background-color: #5EB320;
+}
+
+#log-in {
+	background-color: #1893A3;
+}
+
+
+.sortable-handler {
+  touch-action: none;
+}
